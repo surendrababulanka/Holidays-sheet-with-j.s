@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="holiday-container">
+            <div>
+                <h4>Holiday</h4>
+                <strong>Dashboard</strong>
+                <span>/Holidays</span>
+            </div>
+           <div class="holy">
+            <button onclick="addHtmlTableRow();">+Add History</button>
+        </div>
+        </div>
+        <div class="tab tab-2">
+            <div class="entries">
+                <p>Show</p><input type="number"><p>entries</p>
+            </div>
+            <div class="inputs">
+            <input type="text" placeholder="From" name="from" id ="from" e5d8>
+            <input type="text" placeholder="TO" name="to" id ="to">
+            <input type="text" placeholder="No of days" name="noofdays" id ="noofdays">
+            <input type="text" placeholder="LeaveType" name="leavetype" id ="leavetype">
+            <input type="text" placeholder="Approvedby" name="approvedby" id ="approvedby">
+            </div>
+        </div>
+        <div class="nodata">No data available in table</div>
+        <div class="showing-entries">
+            <div>Showing 0 to 0 entries</div>
+            <div>
+                <button>Previous</button>
+                <button>Next</button>
+            </div>
+        </div>
+        <div class="tab tab-1">
+           
+            <table id="table" border="">
+                <tr>
+                    <th style="padding: 5px 10px;">from</th>
+                    <th>to</th>
+                    <th>noofdays</th>
+                    <th>leavetype</th>
+                    <th>approvedby</th>
+                </tr>
+        </table>
+        </div>
+    </div>
+    <script>
+        function addHtmlTableRow()
+        {
+            var table = document.getElementById ("table"),
+             newRow = table.insertRow (table.length),
+             cell1 = newRow.insertCell (0),
+             cell2 = newRow.insertCell (1),
+             cell3 = newRow.insertCell (2),
+             cell4 = newRow.insertCell (3),
+             cell5 = newRow.insertCell (4),
+             from = document.getElementById ("from") .value,
+             to = document.getElementById ("to") .value,
+             noofdays = document.getElementById ("noofdays") .value;
+             leavetype = document.getElementById ("leavetype") .value;
+             approvedby = document.getElementById ("approvedby") .value;
+
+             cell1.innerHTML = from;
+             cell2.innerHTML = to;
+             cell3.innerHTML = noofdays;
+             cell4.innerHTML = leavetype;
+             cell5.innerHTML = approvedby;
+        }
+    </script>
+</body>
+</html>

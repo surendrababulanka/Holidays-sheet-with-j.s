@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1550px;
+    gap: 30px;
+    margin: auto;
+}
+.holiday-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.395);
+}
+.holy button{
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+.inputs input{
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.entries input{
+    width: 70px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.384);
+    background-color: white;
+    outline: none;
+    padding: 8px;
+}
+.entries{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tab .inputs{
+    width: 1550px;
+}
+.holy{
+    display: flex;
+    align-items: center;
+}
+.tab{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+.tab-2{
+    display: flex;
+    gap: 20px;
+}
+.nodata{
+    display: flex;
+    justify-content: center;
+}
+.showing-entries{
+    display: flex;
+    justify-content: space-between;
+}
+.showing-entries button{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.462);
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
